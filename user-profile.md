@@ -8,7 +8,7 @@
 | Technical parameters | Serve narrative, no list dumping |
 | Character scenes | No fabricated characters, use category discussion |
 | Anti-AI-flavor | Extreme, allow imperfections |
-| Source standard | Reject certain platforms, delete high-risk items |
+| Source standard | Reject certain platforms (e.g. 今日头条 aggregations), delete high-risk items |
 | Human-AI collaboration | Pause at each step, wait for user confirmation |
 
 ## Maintenance Protocol

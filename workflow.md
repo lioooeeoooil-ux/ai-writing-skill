@@ -25,8 +25,10 @@
 - Run `python scripts/check_article.py <draft.md>` for machine-checkable items (banned phrases, third person, paragraph length, hook length)
 - Run through `checklist.md` for the remaining human-judgment items (repetition, deleted-source residue, over-absolutization, fact accuracy)
 - Note: this checklist is single-source in `checklist.md` — do not duplicate item lists elsewhere, or they will drift apart
+- Pick target platform and run its checklist in `references/platform-checklists.md` (unsure which platform? Run the 平台适配检查 three questions there first)
 
 ## Step 5: Final Output
 - Markdown format
 - No section titles or adjust as needed
 - Word count based on completeness, not padding
+- Attach a platform recommendation: which platform(s) this draft fits and why, per `references/platform-checklists.md`

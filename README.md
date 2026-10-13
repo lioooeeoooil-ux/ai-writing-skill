@@ -19,6 +19,8 @@ This is not a prompt template. It's a **workflow** that treats writing as a mult
 ├── workflow.md        # The 5-step human-in-the-loop workflow
 ├── checklist.md       # Single source of the self-check list (human + machine items)
 ├── user-profile.md    # Style preferences + maintenance protocol
+├── references/
+│   └── platform-checklists.md  # 人人都是产品经理 / 微信公众号 platform checklists + fit decision
 ├── scripts/
 │   └── check_article.py  # Machine-checkable constraints (banned phrases, paragraph length, hook length)
 └── examples/
