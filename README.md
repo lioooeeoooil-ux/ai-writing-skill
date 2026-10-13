@@ -1,4 +1,4 @@
-# AI Writing Skill
+# human-ai-writing
 
 A human-AI collaborative writing system for long-form tech/product analysis articles.
 
