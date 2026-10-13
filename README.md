@@ -15,6 +15,7 @@ This is not a prompt template. It's a **workflow** that treats writing as a mult
 ## Repository Structure
 
 ```
+├── SKILL.md           # Entry point: trigger conditions + loading map (for skill-capable AI hosts)
 ├── system-prompt.md   # Voice, sentence patterns, prohibitions, data rules — copy into your AI's system prompt
 ├── workflow.md        # The 5-step human-in-the-loop workflow
 ├── checklist.md       # Single source of the self-check list (human + machine items)
@@ -29,12 +30,8 @@ This is not a prompt template. It's a **workflow** that treats writing as a mult
 
 ## Quick Start
 
+0. If your AI host supports skills (Claude Code, etc.), point it at this repo — the entry point is `SKILL.md` (trigger conditions + loading map)
 1. Copy `system-prompt.md` into your AI assistant's system prompt
 2. Provide an outline + reference links
 3. Follow the workflow in `workflow.md`
-4. Run `python scripts/check_article.py draft.md --hook` on the draft
-5. Go through `checklist.md` for the remaining judgment items
-
-## License
-
-MIT
+4.

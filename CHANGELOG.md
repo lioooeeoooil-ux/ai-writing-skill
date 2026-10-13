@@ -17,3 +17,9 @@
 - **打通流程**：workflow Step 4 增加"按目标平台跑对应清单"，Step 5 增加"附平台投递建议"
 - **规则升级**：「不采信今日头条」从常用语红线落进 system-prompt Data Rules 与 user-profile 来源标准（原为含糊的 "Reject certain platforms"）
 - 常用语中的 Transitions/Emphasis/Prohibitions/Data Rules 与 system-prompt.md 重复，不另存——system-prompt.md 保持唯一事实来源
+
+## 2026-10-13 — P0：SKILL.md 入口
+
+- **新增** `SKILL.md`：frontmatter 触发契约（name + description 含负面触发："不用于短文案/代码/英文/日常写作"），正文为五步骨架 + 加载地图（何时读哪个文件）+ 红线速记
+- README：结构图补 SKILL.md 行，Quick Start 第 0 步指向 SKILL.md
+- 设计要点：入口文件不复制任何现有规则，只做路由——规则仍由 system-prompt.md / checklist.md 等单一文件持有
