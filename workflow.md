@@ -22,13 +22,9 @@
 - Adjust immediately based on feedback
 
 ## Step 4: Self-Check
-Run through checklist before final output:
-- Information repetition?
-- Deleted source residue?
-- Over-absolutization?
-- AI-flavor residue?
-- Person consistency?
-- Fact accuracy?
+- Run `python scripts/check_article.py <draft.md>` for machine-checkable items (banned phrases, third person, paragraph length, hook length)
+- Run through `checklist.md` for the remaining human-judgment items (repetition, deleted-source residue, over-absolutization, fact accuracy)
+- Note: this checklist is single-source in `checklist.md` — do not duplicate item lists elsewhere, or they will drift apart
 
 ## Step 5: Final Output
 - Markdown format

@@ -9,4 +9,15 @@
 | Person consistency | Full text "I" as main | Replace all "the author" "this article" |
 | Number specificity | All numbers have sources or labels | Add sources or change to qualitative description |
 | Paragraph length | Short: 1-2 sentences, Long: max 5 sentences | Split or merge |
+| Hook length | Opening hook 80-150 words / 字 | Rewrite or trim the hook |
 | Ending style | No summary lists | Change to action suggestion or open question |
+
+## Tool-Assisted Items
+
+The following rows are covered automatically by `scripts/check_article.py` — run it first, then spend human review time on the judgment items above:
+
+- AI-flavor residue (banned phrases)
+- Person consistency (third person)
+- Paragraph length
+- Hook length
+- Paragraph-initial enumeration ("First/Second/Finally", "首先/其次/最后")
