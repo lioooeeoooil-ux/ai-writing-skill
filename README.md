@@ -16,11 +16,12 @@ This is not a prompt template. It's a **workflow** that treats writing as a mult
 
 ```
 ├── SKILL.md           # Entry point: trigger conditions + loading map (for skill-capable AI hosts)
-├── system-prompt.md   # Voice, sentence patterns, prohibitions, data rules — copy into your AI's system prompt
-├── workflow.md        # The 5-step human-in-the-loop workflow
+├── workflow.md        # 5-step human-in-the-loop workflow (incl. First Instruction)
 ├── checklist.md       # Single source of the self-check list (human + machine items)
 ├── user-profile.md    # Style preferences + maintenance protocol
 ├── references/
+│   ├── voice-style.md      # Role, hook menu (4 types), 3 skeletons, language layer, endings — evidence-based
+│   ├── red-lines.md        # R1–R5 red lines & data rules (from 小普/齐先生/own-article teardown)
 │   └── platform-checklists.md  # 人人都是产品经理 / 微信公众号 platform checklists + fit decision
 ├── scripts/
 │   └── check_article.py  # Machine-checkable constraints (banned phrases, paragraph length, hook length)
@@ -31,7 +32,7 @@ This is not a prompt template. It's a **workflow** that treats writing as a mult
 ## Quick Start
 
 0. If your AI host supports skills (Claude Code, etc.), point it at this repo — the entry point is `SKILL.md` (trigger conditions + loading map)
-1. Copy `system-prompt.md` into your AI assistant's system prompt
+1. Write the First Instruction (workflow.md Step 1: 角色/受众/核心观点/个人经历/语调); before drafting, read `references/voice-style.md` + `references/red-lines.md`
 2. Provide an outline + reference links
 3. Follow the workflow in `workflow.md`
 4.
