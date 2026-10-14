@@ -45,3 +45,9 @@
 - **统计纪律**（user-profile 维护协议）：每 3 篇文章统计标注 ID，0 命中进观察区、≥5 次升 Step 3；删除权限只给 G/RR/WX，R 系从脚本输出统计
 - **启动协议**（README）：三种宿主的第一条消息模板（本对话框读 SKILL.md / 普通对话贴 bundle.md / skill 宿主挂载仓库）
 - **新增** `scripts/build_bundle.py` + 生成 `bundle.md` 合订本——单文件版由脚本从源文件生成，杜绝手改 drift
+
+## 2026-10-14 — P3：校验脚本回归测试 + CI
+
+- **tests/**：`run_tests.py`（标准库 unittest 风格，零依赖）+ fixtures 一 ID 一文件（fail/ 按 G7/G8/R1/守卫/豁免/combo 组织，pass/ 含 sample-article 全文过检）；10/10 通过
+- **CI**：`.github/workflows/test.yml`，push/PR 自动跑测试 + bundle.md 同步漂移检查（重新生成后 diff，不一致即红）
+- 边界确认：G10/G11 与 R1 统计安全结构暂不机检——机检范围由实证决定（P2 统计纪律兜底）
