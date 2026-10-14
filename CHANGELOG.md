@@ -51,3 +51,11 @@
 - **tests/**：`run_tests.py`（标准库 unittest 风格，零依赖）+ fixtures 一 ID 一文件（fail/ 按 G7/G8/R1/守卫/豁免/combo 组织，pass/ 含 sample-article 全文过检）；10/10 通过
 - **CI**：`.github/workflows/test.yml`，push/PR 自动跑测试 + bundle.md 同步漂移检查（重新生成后 diff，不一致即红）
 - 边界确认：G10/G11 与 R1 统计安全结构暂不机检——机检范围由实证决定（P2 统计纪律兜底）
+
+## 2026-10-14 — P4：跨会话状态 + 真例银行
+
+- **drafts/ 工作区约定**（gitignored，永不进公开仓库）：`state.md` 是唯一必读（当前位置/下一步/关键决策），chapters/ 存逐章稿，annotations.md 沿用 P2 标注格式，draft_full.md 是 Step 4 脚本检查对象
+- **新增** `scripts/new_draft.py <slug>` 一键生成工作区骨架（已测）
+- **断点续写**写入 README 启动方式第 4 条：新会话「读 drafts/<选题>/state.md 和 SKILL.md，从"下一步"继续」——小普"上下文断裂"问题的文件侧解法
+- **真例银行** `examples/bank/` 立规：只收走完全流程的案例（state 摘要 + 标注台账 + 终稿），不收半成品、不收他人文章；第一位成员虚位留给 dogfood 文章
+- 顺手还账：本地 CHANGELOG 此前已记 P3，本次一并推送
