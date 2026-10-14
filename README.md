@@ -36,6 +36,7 @@ This is not a prompt template. It's a **workflow** that treats writing as a mult
 - **本对话框（Kimi，有文件权限）**：第一条消息说「读 `/mnt/agents/output/ai-writing-skill/SKILL.md`，执行 Step 0，我的选题是：___」
 - **任何普通对话**：贴 `bundle.md`（合订本，由 `scripts/build_bundle.py` 从源文件生成，永不手改）
 - **Skill 宿主（Claude Code 等）**：git clone 后挂载仓库目录，宿主自动发现 SKILL.md
+- **断点续写（新会话）**：第一条消息说「读 `drafts/<选题>/state.md` 和 `SKILL.md`，从"下一步"继续」
 
 ## Quick Start
 
