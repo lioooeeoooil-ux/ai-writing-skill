@@ -21,7 +21,7 @@ This is not a prompt template. It's a **workflow** that treats writing as a mult
 ├── user-profile.md    # Style preferences + maintenance protocol
 ├── references/
 │   ├── voice-style.md      # Role, hook menu (4 types), 3 skeletons, language layer, endings — evidence-based
-│   ├── red-lines.md        # R1–R5 red lines & data rules (from 小普/齐先生/own-article teardown)
+│   ├── red-lines.md        # R1–R5 red lines & data rules (from 作者A/作者B/own-article teardown)
 │   └── platform-checklists.md  # 人人都是产品经理 / 微信公众号 platform checklists + fit decision
 ├── scripts/
 │   └── check_article.py  # Machine-checkable constraints (banned phrases, paragraph length, hook length)

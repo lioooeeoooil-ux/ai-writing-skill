@@ -1,12 +1,4 @@
-# 拆解：小普（5 篇 + 1 篇元文章，woshipm.com / 公众号）
-
-> 只含分析观察，不含原文引用。原文链接（分析对象，非转载）：
-> - AI产品用户暴涨之后，产品经理该看哪些指标 https://www.woshipm.com/data-analysis/6431114.html
-> - 踩了10个坑后，我弄清了Vibe Motion的真实玩法 https://www.woshipm.com/ai/6420865.html
-> - 我用 Grok Bot 搭了一支AI团队 https://www.woshipm.com/ai/6473674.html
-> - Jev 刷屏时，我用五个问题判断它值不值得接 https://www.woshipm.com/ai/6470845.html
-> - 万字拆解CMS https://www.woshipm.com/pd/6452874.html
-> - 元文章：我是怎么被写出来的 https://mp.weixin.qq.com/s/pYfzc-J36qtH7sO3AYnJKA
+# 拆解：作者A（5 篇 + 1 篇元文章，woshipm.com / 公众号）
 
 ## 五篇共现特征（=作者系统，可进规则）
 

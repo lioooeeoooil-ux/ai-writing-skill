@@ -6,7 +6,7 @@
 - Special requirements (optional)
 
 ## Step 1: First Instruction + Research
-- Write the First Instruction first (小普流程，约 10 分钟，信息密度优先)：角色 / 受众 / 核心观点 / 个人经历 / 语调 五要素——它决定全文调性，比后续任何一步都值钱
+- Write the First Instruction first (作者A流程，约 10 分钟，信息密度优先)：角色 / 受众 / 核心观点 / 个人经历 / 语调 五要素——它决定全文调性，比后续任何一步都值钱
 - Search core facts (max 4 query terms)
 - Read reference links
 - Output: First Instruction + fact list + uncertainty labels + items needing verification
@@ -19,7 +19,7 @@
 
 ## Step 3: Chapter-by-Chapter Drafting
 - Output each chapter, then **pause for user annotation**
-- Annotation dimensions: tone / information density / rhythm / AI-flavor / transition — plus 困惑型标注 ("我不确定这段成不成立" / "我想要转折但想不到切入点"): feed real uncertainty, not just corrections (小普自曝流程)
+- Annotation dimensions: tone / information density / rhythm / AI-flavor / transition — plus 困惑型标注 ("我不确定这段成不成立" / "我想要转折但想不到切入点"): feed real uncertainty, not just corrections (作者A自曝流程)
 - Adjust immediately based on feedback
 
 ## Step 4: Self-Check
