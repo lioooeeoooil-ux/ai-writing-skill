@@ -17,6 +17,7 @@ This profile rots silently if left static. Rules:
 
 - **After each writing session**: append one line to Evolution Log — what preference changed, what evidence (reader feedback / self-check finding) motivated it. No change, no line.
 - **Monthly**: review the table against recent articles; delete preferences the writing no longer follows (a rule nobody obeys is worse than no rule).
+- **Every 3 finished articles** (annotation statistics): count IDs with `grep -oE 'G[0-9]+\|RR[0-9]+\|WX[0-9]+\|R[0-9]+' annotations.md | sort | uniq -c`. 0-hit rule → observation zone; 0 again after one more article → deletion proposal (user decides — deletion authority covers G/RR/WX only, not red lines). Rule hit ≥5 times → promote from Step 4 final check to per-chapter Step 3 check. R-rules are counted from check_article.py output, not annotations.
 - The preference table is edited in place; only the Evolution Log keeps history.
 
 ## Evolution Log
