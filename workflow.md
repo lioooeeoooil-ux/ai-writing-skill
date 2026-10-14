@@ -1,5 +1,9 @@
 # Writing Workflow (Human-AI Collaborative)
 
+## Working Files Convention
+- Per-article working files live in `drafts/<slug>/` (gitignored, never committed): `state.md` is the single must-read when resuming; chapters in `chapters/`; annotation log in `annotations.md` (P2 format); assembled draft in `draft_full.md`
+- Create a workspace with `python scripts/new_draft.py <slug>`
+
 ## User Input
 - Article outline (required)
 - Reference links (optional)
