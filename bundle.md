@@ -50,6 +50,10 @@
 
 # Writing Workflow (Human-AI Collaborative)
 
+## Working Files Convention
+- Per-article working files live in `drafts/<slug>/` (gitignored, never committed): `state.md` is the single must-read when resuming; chapters in `chapters/`; annotation log in `annotations.md` (P2 format); assembled draft in `draft_full.md`
+- Create a workspace with `python scripts/new_draft.py <slug>`
+
 ## User Input
 - Article outline (required)
 - Reference links (optional)
@@ -173,6 +177,8 @@ The following rows are covered automatically by `scripts/check_article.py` — r
 - **引号锚观点**："这不是能力升级，而是……"式。
 - **口语插入**（说实话/说白了/讲真/说人话）：打破书面腔用，同段不重复。废弃原"每500字1-2个"配额制——不可数，按语感判。【证据：三作者均按语感使用，无人计数】
 - **说人话类比**：类比必须服务论点，不说"相当于一个图书馆"，说"不是先画高清图再压缩，是直接按压缩格式画"。【自己：V4 篇最佳句】
+- **比喻配额（2026-10-15 起，rag-eval-ledger 标注实战定稿）**：全文至多 2 处比喻，不是每章 2 处；且必须同句自解释，不得依赖后文专门 unpack。理由：比喻增加读者理解成本，连续使用让文章臃肿（作者标注实证）。
+- **章间过渡指引（同日定稿）**：全文至多 2 处"下一章讲"式指引，措辞不得重复；章末优先冷收在立场句上。
 - **概念造词**：每篇至少争取一个"我管这个叫 X"级自造概念（如"上下文税"）。【作者B】
 - **金句 blockquote**：至多一处，放在全文重心段。【作者B】
 - **温度守恒**：干货文 ≥2 处、随笔 ≥4 处"具体的人和时刻"（真人/真时间/真对话）；"很多人""在快节奏的现代社会"式抽象主语不算；纯概念拆解型可用对话还原顶替。【G11 人工查】
