@@ -28,6 +28,8 @@ CASES = [
     ("guard: 本文 once, 本文件 never", FIX/"fail/guard_benwen.md", False, 0, ['"本文"'], ["本文件"]),
     ("check:off exemption", FIX/"fail/checkoff_exempt.md", False, 0, ["0 error"], []),
     ("R1 enumeration >=3", FIX/"fail/R1_enum.md", False, 1, ["enumeration"], []),
+    ("G12 cross-paragraph repeat", FIX/"fail/G12_repeat.md", False, 1, ["cross-paragraph repetition"], []),
+    ("G12 tic phrases warn", FIX/"fail/G12_tics.md", False, 0, ["tic"], []),
     ("combo multi-violation", FIX/"fail/combo.md", False, 1, ['"综上所述"', "enumeration"], []),
 ]
 
