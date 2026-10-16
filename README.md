@@ -23,10 +23,14 @@ This is not a prompt template. It's a **workflow** that treats writing as a mult
 ├── references/
 │   ├── voice-style.md      # Role, hook menu (4 types), 3 skeletons, language layer, endings — evidence-based
 │   ├── red-lines.md        # R1–R5 red lines & data rules (from 作者A/作者B/own-article teardown)
-│   └── platform-checklists.md  # 人人都是产品经理 / 微信公众号 platform checklists + fit decision
+│   ├── platform-checklists.md  # 人人都是产品经理 / 微信公众号 platform checklists + fit decision
+│   ├── pattern-bank.md     # 可复用招式库（结构/风格参数/口语骨架）
+│   └── key-chapter-method.md  # 重心章写法（待逆向）
 ├── scripts/
 │   ├── check_article.py  # Machine-checkable constraints (banned phrases, paragraph length, hook length)
 │   └── build_bundle.py   # Generates bundle.md from source files (run after any rule edit)
+├── skills/
+│   └── reviewer/SKILL.md   # 审查 skill：写审分离，三色分级
 └── examples/
     └── sample-article.md # A demo draft written per these rules, with before/after fixes
 ```
@@ -37,6 +41,7 @@ This is not a prompt template. It's a **workflow** that treats writing as a mult
 - **任何普通对话**：贴 `bundle.md`（合订本，由 `scripts/build_bundle.py` 从源文件生成，永不手改）
 - **Skill 宿主（Claude Code 等）**：git clone 后挂载仓库目录，宿主自动发现 SKILL.md
 - **断点续写（新会话）**：第一条消息说「读 `drafts/<选题>/state.md` 和 `SKILL.md`，从"下一步"继续」
+- **活稿协议**：assistant 每轮输出=你可编辑的文件；你改完后，下一轮以你的版本为唯一基线（先 diff 对齐再续写）
 
 ## Quick Start
 
