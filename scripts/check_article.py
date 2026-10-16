@@ -100,6 +100,27 @@ def main():
         if not (80 <= total <= 150):
             errors.append(f"opening hook is ~{total} words/chars, expected 80-150")
 
+    # G12 machine-assist: cross-paragraph duplicate sentences & tic phrases
+    flat = re.sub(r"\s+", "", text)
+    shingle_owner = {}
+    for idx, (_, pp) in enumerate(paras):
+        fp = re.sub(r"\s+", "", pp)
+        for i in range(len(fp) - 11):
+            shingle_owner.setdefault(fp[i:i+12], set()).add(idx)
+    shared = [sh for sh, owners in shingle_owner.items() if len(owners) >= 2]
+    if shared:
+        errors.append(f"cross-paragraph repetition: \"{shared[0]}...\" appears in {len(shingle_owner[shared[0]])} paragraphs")
+    ndash = text.count("——")
+    if ndash > 6:
+        warnings.append(f"em-dash used {ndash}x (rhetoric-repeat risk)")
+    grams = {}
+    for i in range(len(flat) - 3):
+        g = flat[i:i+4]
+        if re.search(r"[\u4e00-\u9fff]", g):
+            grams[g] = grams.get(g, 0) + 1
+    for c, g in sorted(((c, g) for g, c in grams.items() if c >= 4), reverse=True)[:3]:
+        warnings.append(f"4-gram x{c}: {g} (tic risk)")
+
     for w in warnings:
         print(f"WARN  {w}")
     for e in errors:
